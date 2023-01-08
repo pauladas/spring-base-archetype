@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /base-path
+    context-path: /{base-path}
 
 spring:
   profiles:
@@ -13,7 +13,7 @@ spring:
       dialect: org.hibernate.dialect.MySQLDialect
     database-platform: org.hibernate.dialect.MySQL8Dialect
   datasource:
-    url: ${DATABASE_URL:}
+    url: ${DATABASE_URL}
     username: ${DATABASE_USERNAME}
     password: ${DATABASE_PWD}
     driver-class-name: com.mysql.cj.jdbc.Driver
