@@ -4,18 +4,17 @@ pipeline {
         jdk 'Java17'
     }
   stages {
-  	stage('Maven Install') {
-    	agent {
-      	docker {
-        	image 'maven:3.5.0'
-        }
+  	stage('Check Java') {
+      steps {
+      	sh 'java --version'
       }
+    }
+  	stage('Maven Install') {
       steps {
       	sh 'mvn clean install'
       }
     }
     stage('Docker Build') {
-    	agent any
       steps {
       	sh 'docker build -t pauladas/spring-archetype:latest .'
       }
