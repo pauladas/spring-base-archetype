@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /{base-path}
+    context-path: /base-path
 
 spring:
   profiles:

@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>br.com.paulojof</groupId>
-    <artifactId>archetype</artifactId>
+    <artifactId>ms-archetype-paulojof</artifactId>
     <version>1.0.0</version>
     <name>Archetype</name>
     <description>Demo project for Spring Boot</description>

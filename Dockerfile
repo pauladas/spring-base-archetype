@@ -3,7 +3,7 @@ FROM amazoncorretto:17-alpine-jdk
 RUN apk add --no-cache curl tar bash procps
 
 #ARG MS=ms-name
-ARG ms=archetype
+ARG ms=ms-name
 # Downloading and installing Maven
 # 1- Define a constant with the version of maven you want to install
 ARG MAVEN_VERSION=3.8.6
