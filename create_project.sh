@@ -4,7 +4,7 @@ echo basePath:
 read basePath
 
 echo 'Generating project...'
-mvn archetype:generate -DarchetypeGroupId=br.com.paulojof -DarchetypeArtifactId=ms-archetype-paulojof -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=br.com.paulojof -DartifactId=$artifactId -Dversion=1.0.0-SNAPSHOT -B
+mvn archetype:generate -DarchetypeGroupId=br.com.paulojof -DarchetypeArtifactId=ms-archetype-paulojof-archetype -DarchetypeVersion=1.0.0 -DgroupId=br.com.paulojof -DartifactId=$artifactId -Dversion=1.0.0 -B
 
 echo 'Setting configuration files...'
 sed -i "s|base-path|$basePath|g" $artifactId/src/main/resources/application.yaml
